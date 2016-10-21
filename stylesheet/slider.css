@@ -1,3 +1,6 @@
+body {
+  position: relative;
+}
 /* Header START */
 .header {
   margin-top: 40px;
@@ -5,6 +8,24 @@
 }
 .header__logo-img {
   max-height: 100px;
+  z-index: 100;
+}
+.header-fixed {
+    margin: 0;
+    position: fixed;
+    top: 10px;
+    left: 0px;
+    z-index: 100;
+    height: 40px;
+    width: 60px;
+}
+.header__logo-fixed {
+  position: absolute;
+  z-index: 100;
+  height: 100%;
+  width: auto;
+  margin: 0;
+  padding: 0;
 }
 /* Header END */
 /* Navbar START */
@@ -36,12 +57,18 @@
   margin-bottom: 30px;
   background-color: #ffffff;
   position: relative;
-  height: 40px;
+  height: 60px;
   text-align: right;
 }
 .toggle-menu-icon img {
+  margin-top: 10px;
   height: 30px;
   width: auto;
+}
+.fixed {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
 }
 
 /* Navbar END */
@@ -82,6 +109,9 @@
   right: 0;
   height: 100%;
   width: auto;
+}
+.slider-sticky {
+  margin-top: 60px;
 }
 /* Slider END */
 
