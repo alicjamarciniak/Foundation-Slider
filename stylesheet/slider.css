@@ -1,4 +1,5 @@
-body {
+body, html{
+  height: 100%;
   position: relative;
 }
 /* Header START */
@@ -13,22 +14,32 @@ body {
 .header-fixed {
     margin: 0;
     position: fixed;
-    top: 10px;
+    display: inline-block;
+    top: 0px;
     left: 0px;
-    z-index: 100;
-    height: 40px;
-    width: 60px;
+    z-index: 101;
+    height: 45px;
+    width: 70px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 .header__logo-fixed {
   position: absolute;
-  z-index: 100;
+  z-index: 101;
   height: 100%;
   width: auto;
   margin: 0;
   padding: 0;
 }
+.header__logo-fixed img {
+  height: 100%;
+  width: auto;
+}
 /* Header END */
 /* Navbar START */
+.example-menu {
+  z-index: 150;
+}
 .top-bar,
 .top-bar-left,
 .top-bar-left .menu {
@@ -67,6 +78,7 @@ body {
 }
 .fixed {
   position: fixed;
+  top: 0;
   z-index: 99;
   width: 100%;
 }
@@ -111,7 +123,7 @@ body {
   width: auto;
 }
 .slider-sticky {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 /* Slider END */
 

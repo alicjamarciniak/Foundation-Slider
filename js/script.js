@@ -3,7 +3,7 @@ $(document).ready(function() {
   function displayNavbarSticky() {
 
       if (($(window).scrollTop()) > num || ($(window).innerWidth() < 640)) {
-          $('.navbar').hide();
+          // $('.example-menu').hide();
           $('.title-bar').show();
           $('.title-bar').addClass('fixed');
           $('.header').addClass('header-fixed');
@@ -12,7 +12,7 @@ $(document).ready(function() {
 
       } else if($(window).scrollTop() < num) {
           $('.title-bar').hide();
-          $('.navbar').show();
+          // $('.example-menu').show();
           $('.title-bar').removeClass('fixed');
           $('.header').removeClass('header-fixed');
           $('.header__logo').removeClass('header__logo-fixed');
