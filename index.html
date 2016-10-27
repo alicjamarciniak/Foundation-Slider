@@ -26,9 +26,9 @@
     <!-- HEADER stop -->
     <!-- NAVBAR start -->
 
-    <div class="data-sticky-container" data-sticky-container>
+  <div data-sticky-container style="z-index:1; height:93px">
 
-  <div class="sticky" data-sticky data-sticky-on="medium" data-options="marginTop:0;" style="width:100%">
+  <div class="sticky" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1" data-btm-anchor="content:bottom">
 
     <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
       <button class="menu-icon black-icon" type="button" data-toggle>
@@ -38,13 +38,13 @@
       <navbar class="row navbar">
         <div class="top-bar large-4 large-centered medium-8 medium-centered columns" id="example-menu">
           <div class="top-bar-left large-centered column">
-            <ul class="dropdown menu" data-dropdown-menu>
-              <li><a class="menu-item" href="#">Home<span class="show-for-sr">(current)</span></a></li>
-              <li><a class="menu-item" href="#">Pages</a></li>
-              <li><a class="menu-item" href="#">Features</a></li>
-              <li><a class="menu-item" href="#">Portfolio</a></li>
-              <li><a class="menu-item" href="#">Blog</a></li>
-              <li><a class="menu-item" href="#">Contacts</a></li>
+            <ul class="dropdown menu row" data-dropdown-menu>
+              <li class="large-expand columns"><a class="menu-item" href="#">Home<span class="show-for-sr">(current)</span></a></li>
+              <li class="large-expand columns"><a class="menu-item" href="#">Pages</a></li>
+              <li class="large-expand columns"><a class="menu-item" href="#">Features</a></li>
+              <li class="large-expand columns"><a class="menu-item" href="#">Portfolio</a></li>
+              <li class="large-expand columns"><a class="menu-item" href="#">Blog</a></li>
+              <li class="large-expand columns"><a class="menu-item" href="#">Contacts</a></li>
             </ul>
           </div>
         </div>
@@ -56,6 +56,16 @@
     <!-- NAVBAR stop -->
   </div>
   <!-- MENU-BAR end -->
+
+  <div class="row medium-unstack">
+    <div class="columns">One</div>
+    <div class="columns">Two</div>
+    <div class="columns">Three</div>
+    <div class="columns">Four</div>
+    <div class="columns">Five</div>
+    <div class="columns">Six</div>
+  </div>
+
   <!-- SLIDER start -->
   <div class="my-slider">
     <div class="my-slider__inner orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
@@ -170,9 +180,9 @@
   <!-- Foundation RESPONSIVE NAVIGATION -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.responsiveToggle.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.util.mediaQuery.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.util.triggers.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.util.triggers.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.sticky.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.sticky.js"></script>
 
 </body>
 </html>
