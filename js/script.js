@@ -24,11 +24,27 @@ $(document).ready(function() {
   // $(window).bind('scroll', displayNavbarSticky);
   /* navbar END */
 
+function displayNavbarSticky() {
+  if(($(window).scrollTop()) > num || ($(window).innerWidth() < 641)) {
+    $('.menu-bar').addClass('align-justify large-unstack');
+    $('.header').removeClass('expand row').addClass('my-shrink no-margin');
+    $('.header__logo').addClass('shrink');
+    $('.header__logo').find('img').addClass('header__logo-fixed-img');
+    $('.sticky-container').addClass('my-shrink');
+    $('.sticky-full').addClass('sticky-rwd');
+    $('.title-bar').addClass('my-shrink');
+  }
+}
+var num = 10; //number of pixels before modifying styles
+displayNavbarSticky();
+
   /* articles START */
     $('.article-hexagon').on('click', function() {
       $(this).siblings('.article-content').slideToggle('slow');
     });
   /* articles END */
+
+
 });
 /* FOUNDATION */
   $(document).foundation();

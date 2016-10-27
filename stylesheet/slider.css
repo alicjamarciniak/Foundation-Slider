@@ -31,9 +31,10 @@ body, html{
   margin: 0;
   padding: 0;
 }
-.header__logo-fixed img {
-  height: 100%;
-  width: auto;
+.header__logo-fixed-img {
+  display: inline-block;
+  height: 45px;
+  width: auto;;
 }
 /* Header END */
 /* Navbar START */
@@ -42,7 +43,7 @@ body, html{
 }
 .top-bar,
 .top-bar-left,
-.top-bar-left .menu {
+.top-bar-left .my-menu {
   background-color: #ffffff;
 }
 .top-bar {
@@ -57,11 +58,11 @@ body, html{
   text-decoration: underline;
   color: #8e8e8e;
 }
-.menu li.active a {
+.my-menu li.active a {
   color: #00ffff;
   background-color: transparent;
 }
-.menu li.active:hover {
+.my-menu li.active:hover {
   color: #00ffff;
 }
 .title-bar {
@@ -78,11 +79,11 @@ body, html{
   background-color: #000000;
   box-shadow: 0 7px 0 #000000,0 14px 0 #000000;
 }
-.fixed {
-  position: fixed;
-  top: 0;
-  z-index: 99;
+.sticky-full {
   width: 100%;
+}
+.sticky-rwd {
+  width: auto;
 }
 
 /* Navbar END */
@@ -229,3 +230,19 @@ footer p {
   width: 25px;
 }
 /* Footer END */
+.my-shrink {
+  display: inline-block;
+  width: auto;
+}
+.my-align-justify {
+  justify-content: space-between;;
+}
+.no-margin {
+  margin: 0;
+}
+.my-auto-width {
+  width: auto ;
+}
+.my-full-width {
+  width: 100%;
+}
