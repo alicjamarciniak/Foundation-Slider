@@ -4,7 +4,7 @@ body, html{
 }
 /* Header START */
 .header {
-  margin-top: 40px;
+  padding-top: 40px;
   margin-bottom: 70px;
 }
 .header__logo-img {
@@ -41,6 +41,12 @@ body, html{
 .example-menu {
   z-index: 150;
 }
+.menu-bar {
+  width: 100%;
+  z-index: 100;
+  background-color: #ffffff;
+  position: relative;
+}
 .top-bar,
 .top-bar-left,
 .top-bar-left .my-menu {
@@ -66,9 +72,12 @@ body, html{
   color: #00ffff;
 }
 .title-bar {
+  display: inline;
   margin-bottom: 30px;
   background-color: #ffffff;
-  position: relative;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   height: 60px;
   text-align: right;
 }
@@ -81,11 +90,25 @@ body, html{
 }
 .sticky-full {
   width: 100%;
+  height: 80px;
 }
 .sticky-rwd {
   width: auto;
 }
-
+.navbar {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.navbar-fixed {
+  top: 80px;
+  margin-top: 0;
+}
 /* Navbar END */
 
 /* Slider START */
@@ -230,19 +253,7 @@ footer p {
   width: 25px;
 }
 /* Footer END */
-.my-shrink {
-  display: inline-block;
-  width: auto;
-}
-.my-align-justify {
-  justify-content: space-between;;
-}
-.no-margin {
-  margin: 0;
-}
-.my-auto-width {
-  width: auto ;
-}
-.my-full-width {
-  width: 100%;
+.fixed {
+  position: fixed;
+  top: 0;
 }

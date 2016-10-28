@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="responsive/tablet.css">
   <link rel="stylesheet" href="responsive/media.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="jquery.snow.js"></script>
+  <script src="js/jquery.snow.js"></script>
 </head>
 <body>
   <!-- MENU-BAR start -->
@@ -27,7 +27,7 @@
     <!-- HEADER stop -->
     <!-- NAVBAR start -->
 
-  <div data-sticky-container style="z-index:1; height:93px;">
+  <div data-sticky-container style="z-index:1; height:80px;">
 
   <div class="sticky-full" data-options="marginTop:0;" data-top-anchor="1" data-btm-anchor="content:bottom">
 
@@ -39,7 +39,7 @@
       <navbar class="row navbar align-center">
         <div class="top-bar" id="example-menu">
           <div class="top-bar-left">
-            <div class="dropdown row large-unstack" data-dropdown-menu>
+            <div class="dropdown row medium-unstack" data-dropdown-menu>
               <div class="columns"><a class="menu-item" href="#">Home<span class="show-for-sr">(current)</span></a></div>
               <div class="columns"><a class="menu-item" href="#">Pages</a></div>
               <div class="columns"><a class="menu-item" href="#">Features</a></div>
@@ -178,9 +178,6 @@
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.sticky.js"></script>
 
-  <script>
-  $(document).ready( function(){
-    $.fn.snow({ minSize: 5, maxSize: 50, newOn: 1000, flakeColor: '#0099FF' }); });
-  </script>
+
 </body>
 </html>
