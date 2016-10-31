@@ -11,26 +11,6 @@ body, html{
   max-height: 100px;
   z-index: 100;
 }
-.header-fixed {
-    margin: 0;
-    position: fixed;
-    display: inline-block;
-    top: 0px;
-    left: 0px;
-    z-index: 101;
-    height: 45px;
-    width: 70px;
-    padding-top: 10px;
-    padding-left: 10px;
-}
-.header__logo-fixed {
-  position: absolute;
-  z-index: 101;
-  height: 100%;
-  width: auto;
-  margin: 0;
-  padding: 0;
-}
 .header__logo-fixed-img {
   display: inline-block;
   height: 45px;
@@ -46,6 +26,10 @@ body, html{
   z-index: 100;
   background-color: #ffffff;
   position: relative;
+}
+.my-sticky-container {
+  z-index:1;
+  height:80px;
 }
 .top-bar,
 .top-bar-left,
@@ -148,9 +132,7 @@ body, html{
   height: 100%;
   width: auto;
 }
-.slider-sticky {
-  margin-top: 80px;
-}
+
 /* Slider END */
 
 /*  Articles START*/
@@ -257,3 +239,36 @@ footer p {
   position: fixed;
   top: 0;
 }
+
+/* STICKY-MENU START */
+.sticky-menu .header {
+  margin: 0;
+  position: fixed;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  z-index: 101;
+  height: 45px;
+  width: 70px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.sticky-menu .header__logo {
+  position: absolute;
+  z-index: 101;
+  height: 100%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+.sticky-menu .my-slider {
+  margin-top: 80px;
+}
+.sticky-menu .menu-bar {
+  width: 100%;
+  z-index: 100;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+}
+/* STICKY-MENU END*/
