@@ -1,0 +1,274 @@
+body, html{
+  height: 100%;
+  position: relative;
+}
+/* Header START */
+.header {
+  padding-top: 40px;
+  margin-bottom: 70px;
+}
+.header__logo-img {
+  max-height: 100px;
+  z-index: 100;
+}
+.header__logo-fixed-img {
+  display: inline-block;
+  height: 45px;
+  width: auto;;
+}
+/* Header END */
+/* Navbar START */
+.example-menu {
+  z-index: 150;
+}
+.menu-bar {
+  width: 100%;
+  z-index: 100;
+  background-color: #ffffff;
+  position: relative;
+}
+.my-sticky-container {
+  z-index:1;
+  height:80px;
+}
+.top-bar,
+.top-bar-left,
+.top-bar-left .my-menu {
+  background-color: #ffffff;
+}
+.top-bar {
+  margin-bottom: 40px;
+}
+.menu-item {
+  font-size: 14px;
+  font-weight: bold;
+  color: #8e8e8e;
+}
+.menu-item:hover {
+  text-decoration: underline;
+  color: #8e8e8e;
+}
+.my-menu li.active a {
+  color: #00ffff;
+  background-color: transparent;
+}
+.my-menu li.active:hover {
+  color: #00ffff;
+}
+.title-bar {
+  display: inline;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 60px;
+  text-align: right;
+}
+.black-icon::after {
+  /*margin-top: 10px;
+  height: 30px;
+  width: auto;*/
+  background-color: #000000;
+  box-shadow: 0 7px 0 #000000,0 14px 0 #000000;
+}
+.sticky-full {
+  width: 100%;
+  height: 80px;
+}
+.sticky-rwd {
+  width: auto;
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.navbar-fixed {
+  top: 80px;
+  margin-top: 0;
+}
+/* Navbar END */
+
+/* Slider START */
+.my-slider__inner{
+  position: relative;
+}
+.orbit-previous {
+  left: 20px;
+}
+.orbit-next {
+  right: 20px;
+  background-color: transparent;
+}
+.orbit-previous:hover,
+.orbit-previous:active,
+.orbit-previous:focus,
+.orbit-next:focus,
+.orbit-next:hover,
+.orbit-next:active {
+  background-color: transparent;
+}
+.arrow-left {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+}
+.arrow-right {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+}
+
+/* Slider END */
+
+/*  Articles START*/
+.articles {
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.article {
+  position: relative;
+  margin-bottom: 40px;
+  min-height: 100px;
+  padding-top: 50px;
+}
+.article-hexagon {
+  position: absolute;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  width: 100px;
+  height: 140px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.article-hexagon img.hexagon {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+}
+.heaxagon-icon {
+  position: absolute;
+  margin: auto;
+  z-index: 3;
+  height: 40px;
+  width: auto;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+.article-content {
+  display: none;
+  border-radius: 7px;
+  overflow: hidden;
+  min-height: 1px;
+  padding: 40px 15px 30px;
+  background-color: #4c4c4c;
+}
+.article-content .title {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #00ffff;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.article-content .description {
+  text-align: justify;
+  color: #FFFFFF;
+}
+/* Articles END*/
+
+/* About START */
+.about .about__content {
+  padding: 40px 40px;
+  background-color: #eeeeee;
+}
+.about .title {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #00ffff;
+  font-family: Verdana, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+.about__content .description {
+  font-size: 18px;
+  text-align: justify;
+}
+/* About END */
+
+/* Footer START */
+footer {
+  margin-top: 70px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+}
+footer p {
+  display: inline-block;
+}
+.social-icons {
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+}
+.social-icons img {
+  margin-left: 10px;
+  height: 25px;
+  width: 25px;
+}
+/* Footer END */
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+/* STICKY-MENU START */
+.sticky-menu .header {
+  margin: 0;
+  position: fixed;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  z-index: 101;
+  height: 45px;
+  width: 70px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.sticky-menu .header__logo {
+  position: absolute;
+  z-index: 101;
+  height: 100%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+.sticky-menu .my-slider {
+  margin-top: 80px;
+}
+.sticky-menu .menu-bar {
+  width: 100%;
+  z-index: 100;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+}
+/* STICKY-MENU END*/

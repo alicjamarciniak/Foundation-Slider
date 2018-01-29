@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <title>Foundation and jQuery slider</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation-flex.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
+  <link rel="stylesheet" href="stylesheet/slider.css">
+  <link rel="stylesheet" href="responsive/tablet.css">
+  <link rel="stylesheet" href="responsive/media.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/jquery.snow.js"></script>
+</head>
+<body>
+  <!-- MENU-BAR start -->
+  <div class="menu-bar">
+    <!-- HEADER start -->
+
+    <header class="header row expand">
+      <div class="header__logo columns text-center">
+        <img class="header__logo-img" src="images/Logo_TV_2015.png"></img>
+      </div>
+    </header>
+
+    <!-- HEADER stop -->
+    <!-- NAVBAR start -->
+
+  <div class="my-sticky-container">
+
+  <div class="sticky-full" data-options="marginTop:0;" data-top-anchor="1" data-btm-anchor="content:bottom">
+
+    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+      <button class="menu-icon black-icon" type="button" data-toggle>
+      </button>
+    </div>
+
+      <navbar class="row navbar align-center">
+        <div class="top-bar" id="example-menu">
+          <div class="top-bar-left">
+            <div class="dropdown row medium-unstack" data-dropdown-menu>
+              <div class="columns"><a class="menu-item" href="#">Home<span class="show-for-sr">(current)</span></a></div>
+              <div class="columns"><a class="menu-item" href="#">Pages</a></div>
+              <div class="columns"><a class="menu-item" href="#">Features</a></div>
+              <div class="columns"><a class="menu-item" href="#">Portfolio</a></div>
+              <div class="columns"><a class="menu-item" href="#">Blog</a></div>
+              <div class="columns"><a class="menu-item" href="#">Contacts</a></div>
+            </div>
+          </div>
+        </div>
+      </navbar>
+
+  </div><!-- end sticky -->
+</div><!-- end sticky container -->
+
+    <!-- NAVBAR stop -->
+  </div>
+  <!-- MENU-BAR end -->
+
+
+
+  <!-- SLIDER start -->
+  <div class="my-slider">
+    <div class="my-slider__inner orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+      <ul class="my-slider__inner-content orbit-container">
+        <button class="orbit-previous">
+          <img class="arrow-left" src="images/arrow-left.png"></img>
+        </button>
+        <button class="orbit-next">
+          <img class="arrow-right" src="images/arrow-right.png"></img>
+        </button>
+        <li class="is-active orbit-slide">
+          <img class="orbit-image" src="images/slides/ballet-1376250_1920.jpg" alt="Ballerinas">
+        </li>
+        <li class="orbit-slide">
+          <img class="orbit-image" src="images/slides/dandelion-1346727_1920.jpg" alt="Dandelion">
+        </li>
+        <li class="orbit-slide">
+          <img class="orbit-image" src="images/slides/holocaust-1621728_1920.jpg" alt="Holocaust monument">
+        </li>
+        <li class="orbit-slide">
+          <img class="orbit-image" src="images/slides/stained-glass-1589648_1920.jpg" alt="Stained glass">
+        </li>
+      </div>
+    </div>
+    <!-- SLIDER stop -->
+    <!-- ARTICLES start -->
+    <section class="articles row">
+      <div class="large-3 medium-6 small-12 columns article">
+        <div class="article-hexagon">
+          <img class="hexagon" src="images/hexagon.png"></img>
+          <img class="heaxagon-icon" src="images/32.png"></img>
+        </div>
+        <div class="article-content">
+          <h3 class="title">Lorem Ipsum</h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu egestas nunc, a pellentesque est. Aenean eu sagittis dui. Nam ultrices lacus vel turpis varius porttitor. Aliquam varius dignissim magna a sagittis. Nam non leo a massa gravida iaculis eget nec est. Duis mollis felis ac fringilla commodo. In nisl nisl, consequat non nisl consectetur, pretium malesuada lorem.
+          </p>
+        </div>
+      </div>
+      <div class="large-3 medium-6 small-12 columns article">
+        <div class="article-hexagon">
+          <img class="hexagon" src="images/hexagon.png"></img>
+          <img class="heaxagon-icon" src="images/32.png"></img>
+        </div>
+        <div class="article-content">
+          <h3 class="title">Lorem Ipsum</h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu egestas nunc, a pellentesque est. Aenean eu sagittis dui. Nam ultrices lacus vel turpis varius porttitor. Aliquam varius dignissim magna a sagittis. Nam non leo a massa gravida iaculis eget nec est. Duis mollis felis ac fringilla commodo. In nisl nisl, consequat non nisl consectetur, pretium malesuada lorem.
+          </p>
+        </div>
+      </div>
+      <div class="large-3 medium-6 small-12 columns article">
+        <div class="article-hexagon">
+          <img class="hexagon" src="images/hexagon.png"></img>
+          <img class="heaxagon-icon" src="images/32.png"></img>
+        </div>
+        <div class="article-content">
+          <h3 class="title">Lorem Ipsum</h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu egestas nunc, a pellentesque est. Aenean eu sagittis dui. Nam ultrices lacus vel turpis varius porttitor. Aliquam varius dignissim magna a sagittis. Nam non leo a massa gravida iaculis eget nec est. Duis mollis felis ac fringilla commodo. In nisl nisl, consequat non nisl consectetur, pretium malesuada lorem.
+          </p>
+        </div>
+      </div>
+      <div class="large-3 medium-6 small-12 columns article">
+        <div class="article-hexagon">
+          <img class="hexagon" src="images/hexagon.png"></img>
+          <img class="heaxagon-icon" src="images/32.png"></img>
+        </div>
+        <div class="article-content">
+          <h3 class="title">Lorem Ipsum</h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu egestas nunc, a pellentesque est. Aenean eu sagittis dui. Nam ultrices lacus vel turpis varius porttitor. Aliquam varius dignissim magna a sagittis. Nam non leo a massa gravida iaculis eget nec est. Duis mollis felis ac fringilla commodo. In nisl nisl, consequat non nisl consectetur, pretium malesuada lorem.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ARTICLES stop -->
+    <!-- ABOUT start -->
+    <section class="container-fluid about">
+      <div class="about__content">
+        <h2 class="title">About</h2>
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu egestas nunc, a pellentesque est. Aenean eu sagittis dui. Nam ultrices lacus vel turpis varius porttitor. Aliquam varius dignissim magna a sagittis. Nam non leo a massa gravida iaculis eget nec est. Duis mollis felis ac fringilla commodo. In nisl nisl, consequat non nisl consectetur, pretium malesuada lorem.
+        </br></br>
+        Ut volutpat feugiat efficitur. Proin mattis dapibus velit nec tincidunt. Vivamus nec gravida sapien, sed ullamcorper dui. Fusce pharetra nulla eu purus venenatis, eget commodo lectus rutrum. Aliquam erat volutpat. Aenean et consectetur mauris. Morbi scelerisque viverra lorem, sed mollis augue blandit sit amet. Sed fermentum ligula dolor, eu mattis elit tincidunt et. Integer at nulla id nisl maximus egestas. Nulla vehicula ipsum in mi laoreet mollis. Vestibulum non magna eget ligula tincidunt tempor. Suspendisse potenti.
+      </p>
+    </div>
+  </section>
+  <!-- ABOUT stop -->
+  <!-- FOOTER start -->
+  <footer>
+    <p>Made by Alicja Marciniak &copy 2016</p>
+    <div class="social-icons">
+      <img src="images/svg/google-plus-logo-button.svg"></img>
+      <img src="images/svg/instagram-logo.svg"></img>
+      <img src="images/svg/social-media.svg"></img>
+      <img src="images/svg/social.svg"></img>
+    </div>
+  </footer>
+  <!-- FOOTER stop -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- Foundation ORBIT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation/foundation.orbit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.core.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.util.keyboard.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.util.motion.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.util.timerAndImageLoader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.util.touch.js"></script>
+  <!-- Foundation RESPONSIVE NAVIGATION -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.responsiveToggle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.util.mediaQuery.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.util.triggers.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.sticky.js"></script>
+
+
+</body>
+</html>
